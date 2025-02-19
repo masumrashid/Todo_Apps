@@ -34,6 +34,11 @@ class _todoState extends State<Todo> {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
+      body: Column(
+        children: [
+          Text('To Do')
+        ],
+      ),
     );
   }
 }
