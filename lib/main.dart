@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(Myapp());
 }
 
@@ -13,10 +12,10 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Todo(),
-
     );
   }
 }
+
 class Todo extends StatefulWidget {
   const Todo({super.key});
 
@@ -28,8 +27,13 @@ class _todoState extends State<Todo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text(
+          'To Do List',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+      ),
     );
   }
 }
-
